@@ -1,57 +1,56 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+          
+# Hướng dẫn cài đặt và chạy ứng dụng React + TypeScript + Vite + Tailwind
 
-## Expanding the ESLint configuration
+## Yêu cầu hệ thống
+- Node.js (phiên bản mới nhất)
+- npm hoặc yarn hoặc pnpm
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Cài đặt
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clone repository về máy của bạn:
+```bash
+git clone <repository-url> my-app
+cd my-app
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  extends: [
-    // other configs...
-    // Enable lint rules for React
-    reactX.configs['recommended-typescript'],
-    // Enable lint rules for React DOM
-    reactDom.configs.recommended,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+2. Cài đặt các dependencies:
+```bash
+npm install
 ```
+Hoặc nếu bạn sử dụng yarn:
+```bash
+yarn
+```
+
+## Chạy ứng dụng
+
+1. Khởi chạy môi trường development:
+```bash
+npm run dev
+```
+Hoặc với yarn:
+```bash
+yarn dev
+```
+
+2. Mở trình duyệt và truy cập: `http://localhost:5173`
+
+## Các lệnh khác
+
+- Build ứng dụng cho production:
+```bash
+npm run build
+```
+
+- Xem trước bản build:
+```bash
+npm run preview
+```
+
+## Cấu trúc dự án
+
+Dự án sử dụng React 18, TypeScript, Vite và Tailwind CSS với các thư viện UI từ Radix UI. Cấu trúc thư mục đã được tổ chức sẵn với các components, contexts, hooks và pages.
+        Too many current requests. Your queue position is 1. Please wait for a while or switch to other models for a smoother experience.
