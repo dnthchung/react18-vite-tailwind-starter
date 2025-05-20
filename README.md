@@ -1,7 +1,7 @@
 
 
 
-          
+
 # Hướng dẫn cài đặt và chạy ứng dụng React + TypeScript + Vite + Tailwind
 
 ## Yêu cầu hệ thống
@@ -53,4 +53,17 @@ npm run preview
 ## Cấu trúc dự án
 
 Dự án sử dụng React 18, TypeScript, Vite và Tailwind CSS với các thư viện UI từ Radix UI. Cấu trúc thư mục đã được tổ chức sẵn với các components, contexts, hooks và pages.
-        Too many current requests. Your queue position is 1. Please wait for a while or switch to other models for a smoother experience.
+
+----
+```
+src/
+├── components/         # Các UI component (Button, Header, Sidebar...)
+├── pages/              # Các trang chính (Login, Dashboard, etc.)
+├── contexts/            # Context API (AuthContext)
+├── routes/             # Định nghĩa route và guard
+├── lib/                # Hàm tiện ích (role check, API utils, utils, ...)
+├── services/           # Gọi API từ backend (axios)
+├── App.tsx
+├── main.tsx
+
+```
